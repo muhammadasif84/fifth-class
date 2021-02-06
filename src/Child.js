@@ -3,6 +3,7 @@ import CounterContext from './CounterContext.js';
 
 
 
+
 const Child = (props) => {
 
     let counterValue = useContext(CounterContext);
@@ -14,7 +15,7 @@ const Child = (props) => {
             <br/>
             <h1> Passing Value through CounterContext</h1>
             <h3> Counter value is: {counterValue[0]}</h3>
-            <button 
+            <button className="button"
              onClick={() => {counterValue[1](++counterValue[0])} }>
                  Increment
             </button>
